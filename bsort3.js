@@ -66,12 +66,12 @@ function nextStep(){
 		if(innerI<arr.length-outerI){
 			    if (innerI == 0) { //если 1 элемент - без сброса цвета
 				cell1 = document.getElementById('col'+innerI);
-				cell2 = document.getElementById('col'+(1+innerI));			
+				cell2 = document.getElementById('col'+(innerI+1));			
 			paint(cell1,cell2,'#FFFF3C');
 				} else {
 					cell0 = document.getElementById('col'+(innerI-1));
 					cell1 = document.getElementById('col'+innerI);
-					cell2 = document.getElementById('col'+(1+innerI));			
+					cell2 = document.getElementById('col'+(innerI+1));			
 					cell0.style.backgroundColor='#f0f0f2'; // сбрасываем в цвет фона
 					paint(cell1,cell2,'#FFFF3C');
 				} 
