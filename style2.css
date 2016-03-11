@@ -1,0 +1,110 @@
+body {
+        background-color: #f0f0f2;
+        margin: 0;
+        padding: 0;
+        font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+table {
+	width: 100%;
+	}	
+
+td {
+    border: 1px solid black;
+    padding: 3px;
+    text-align: center;
+    transition: background-color 1s;
+    font: italic;
+    font-size: 2em;
+	margin: auto;
+	}
+
+
+
+/*.arr-box{
+	margin: auto;
+}*/
+
+.text{
+	width: 600px;
+	margin: auto;
+}
+.text h2{
+	text-align: center;
+}
+.entNum{
+	width: 500px;
+	padding-top: 50px;
+	margin: auto;
+}
+
+.box-btn{
+	float: right;
+	padding: 80px 0 20px;
+}
+
+.example {
+	width: 300px;
+	padding-top: 50px;
+	margin: left;
+	}
+
+
+/*.arr-elem{
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	position: absolute;
+	border-left: 1px solid #f3f3f3;
+	border-right: 1px solid #f3f3f3;
+	background-color: #f9f9f9;
+	vertical-align: middle;
+	text-align: center;
+	font-weight: bold;
+}*/
+
+/*input[type="number"]{
+	width: 60px;
+	height: 20px;
+	margin: 0 10px 10px 0;
+	border-radius: 4px;
+}*/
+
+input[type="button"]{
+	height: 25px;
+	background-color: #ACB1B1;
+	border: none;
+	border-radius: 3px;
+}
+
+input[type="button"]:hover{
+	background-color: #7E888A;
+}
+
+#buttonBox{
+	visibility: hidden;
+	padding-top: 30px;
+	width: 300px;
+	height: 400px;
+	position: relative;
+	}
+	
+#example {
+	padding-top: 30px;
+	width: 300px;
+	position: relative;
+	}
+	
+#yel {
+	background-color: #FFFF3C;
+}
+#red {
+	background-color: #FF3C53;
+}
+#green {
+	background-color: #53FF3C;
+}
+#mocha {
+	width:700px;
+	margin:auto;
+}

@@ -1,0 +1,81 @@
+﻿
+<!doctype html>
+<html>
+<head>
+    <title>Bubble sort</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="style2.css">
+	
+	<!-- подключаем стили Mocha, для отображения результатов -->
+  <link rel="stylesheet" href="lib/mocha.css">
+  <!-- подключаем библиотеку Mocha -->
+  <script src="lib/mocha.js"></script>
+  <!-- настраиваем Mocha: предстоит BDD-тестирование -->
+  <script>
+    mocha.setup('bdd');
+  </script>
+
+  <!-- подключаем chai -->
+  <script src="lib/chai.js"></script>
+  <!-- в chai есть много всего, выносим assert в глобальную область -->
+  <script>
+    var assert = chai.assert;
+  </script>
+</head>
+
+<body>
+
+<div class="text">
+    <h2>Пузырьковая сортировка (Bubble sort)</h2>
+    <p>Алгоритм состоит из повторяющихся проходов по сортируемому массиву.
+	За каждый проход элементы последовательно сравниваются попарно и, если порядок
+	в паре неверный, выполняется обмен элементов. Проходы по массиву повторяются 
+	N-1 раз или до тех пор, пока на очередном проходе не окажется, что обмены 
+	больше не нужны, что означает — массив отсортирован. При каждом проходе 
+	алгоритма по внутреннему циклу, очередной наибольший элемент массива ставится
+	на своё место в конце массива рядом с предыдущим «наибольшим элементом»,
+	а наименьший элемент перемещается на одну позицию к началу массива («всплывает»
+	до нужной позиции, как пузырёк в воде, отсюда и название алгоритма). 
+	(<b>from Wiki</b>)</p>
+    <p></p>
+</div>
+
+<form class ="entNum">
+    Введите числа, разделённые пробелами: <br />
+	<input type="text" 	id="entArr" size="50" pattern="/\d+\s+/"  required>
+	<input type="button" value="Закончить ввод" onclick="main();">
+</form>
+<p> </p>
+
+<div id="showArr"></div>
+
+<div id="buttonBox" class="box-btn">
+			<input type="button" value="Сброс" id="clear" onclick="clearAll();">
+			<input type="button" value="Следующий шаг" id="step" onclick="nextStep();">
+</div>
+
+<div id="example">
+<p id="yel"> сравниваемые ячейки, без перестановки </p>
+<p id="red"> производится перестановка ячеек </p>
+<p id="green"> отсортированое значение </p>
+</div>
+
+<script src="bsort3.js"></script>
+
+<script src="test2.js"></script>
+<div id="mocha"></div></div>	
+	<script>
+    	mocha.setup('bdd');
+	</script>
+		
+	
+	
+	<script>		
+    	mocha.run();
+ 	</script>
+  
+</body>
+</html>
