@@ -81,7 +81,8 @@ function nextStep(){
 				arr[innerI] = arr[innerI+1];
 				arr[innerI+1] = temp;
 				paint(cell1,cell2,'#FF3C53');
-				changeElem(cell1,cell2,arr[innerI],arr[innerI+1]);
+				cell1.innerHTML = arr[innerI];
+				cell2.innerHTML = arr[innerI+1];
 			}
 
 			innerI++;
@@ -102,9 +103,4 @@ function paint(cell1,cell2,color){
 	cell1.style.backgroundColor = color;
 	if(cell2) // для окраски только одного элемента
 		cell2.style.backgroundColor = color;
-}
-
-function changeElem(cell1,cell2,val1,val2){
-	cell1.innerHTML = val1;
-	cell2.innerHTML = val2; 
 }
